@@ -1,0 +1,598 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Iron · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-rust/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../advanced/non_struct_objects.html" />
+    
+    
+    <link rel="prev" href="rocket.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart.html">
+            
+                <a href="../quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Type System</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../types/objects/defining_objects.html">
+            
+                <a href="../types/objects/defining_objects.html">
+            
+                    
+                    Defining objects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../types/objects/complex_fields.html">
+            
+                <a href="../types/objects/complex_fields.html">
+            
+                    
+                    Complex fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../types/objects/using_contexts.html">
+            
+                <a href="../types/objects/using_contexts.html">
+            
+                    
+                    Using contexts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../types/objects/error_handling.html">
+            
+                <a href="../types/objects/error_handling.html">
+            
+                    
+                    Error handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    Other types
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../types/enums.html">
+            
+                <a href="../types/enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../types/interfaces.html">
+            
+                <a href="../types/interfaces.html">
+            
+                    
+                    Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../types/input_objects.html">
+            
+                <a href="../types/input_objects.html">
+            
+                    
+                    Input objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../types/scalars.html">
+            
+                <a href="../types/scalars.html">
+            
+                    
+                    Scalars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../types/unions.html">
+            
+                <a href="../types/unions.html">
+            
+                    
+                    Unions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Schema</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../schema/schemas_and_mutations.html">
+            
+                <a href="../schema/schemas_and_mutations.html">
+            
+                    
+                    Schemas and mutations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Adding a server</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="rocket.html">
+            
+                <a href="rocket.html">
+            
+                    
+                    Rocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="iron.html">
+            
+                <a href="iron.html">
+            
+                    
+                    Iron
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Topics</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../advanced/non_struct_objects.html">
+            
+                <a href="../advanced/non_struct_objects.html">
+            
+                    
+                    Non-struct objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../advanced/objects_and_generics.html">
+            
+                <a href="../advanced/objects_and_generics.html">
+            
+                    
+                    Objects and generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    [Context switching]
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <span>
+            
+                    
+                    [Dynamic type system]
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Iron</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="integrating-with-iron">Integrating with Iron</h1>
+<p><a href="http://ironframework.io" target="_blank">Iron</a> is a library that&apos;s been around for a while in the Rust sphere but lately
+hasn&apos;t seen much of development. Nevertheless, it&apos;s still a solid library with a
+familiar request/response/middleware architecture that works on Rust&apos;s stable
+channel.</p>
+<p>Juniper&apos;s Iron integration is contained in the <code>juniper_iron</code> crate:</p>
+<div><p class="code-filename">Cargo.toml</p></div>
+<pre><code class="lang-toml"><span class="hljs-section">[dependencies]</span>
+<span class="hljs-attr">juniper</span> = <span class="hljs-string">&quot;0.9.0&quot;</span>
+<span class="hljs-attr">juniper_iron</span> = <span class="hljs-string">&quot;0.1.0&quot;</span>
+</code></pre>
+<p>Included in the source is a <a href="https://github.com/graphql-rust/juniper_iron/blob/master/examples/iron_server.rs" target="_blank">small
+example</a>
+which sets up a basic GraphQL and <a href="https://github.com/graphql/graphiql" target="_blank">GraphiQL</a> handler.</p>
+<h2 id="basic-integration">Basic integration</h2>
+<p>Let&apos;s start with a minimal schema and just get a GraphQL endpoint up and
+running. We use <a href="https://github.com/iron/mount" target="_blank">mount</a> to attach the GraphQL handler at <code>/graphql</code>.</p>
+<p>The <code>context_factory</code> function will be executed on every request and can be used
+to set up database connections, read session token information from cookies, and
+set up other global data that the schema might require.</p>
+<p>In this example, we won&apos;t use any global data so we just return an empty value.</p>
+<pre><code class="lang-rust"><span class="hljs-meta">#[macro_use]</span> <span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> juniper;
+<span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> juniper_iron;
+<span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> iron;
+<span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> mount;
+
+<span class="hljs-keyword">use</span> mount::Mount;
+<span class="hljs-keyword">use</span> iron::prelude::*;
+<span class="hljs-keyword">use</span> juniper::EmptyMutation;
+<span class="hljs-keyword">use</span> juniper_iron::GraphQLHandler;
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">context_factory</span></span>(_: &amp;<span class="hljs-keyword">mut</span> Request) -&gt; () {
+    ()
+}
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Root</span></span>;
+
+graphql_object!(Root: () |&amp;<span class="hljs-keyword">self</span>| {
+    field foo() -&gt; <span class="hljs-built_in">String</span> {
+        <span class="hljs-string">&quot;Bar&quot;</span>.to_owned() 
+    }
+});
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">main</span></span>() {
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut</span> mount = Mount::new();
+
+    <span class="hljs-keyword">let</span> graphql_endpoint = GraphQLHandler::new(
+        context_factory,
+        Root,
+        EmptyMutation::&lt;()&gt;::new(),
+    );
+
+    mount.mount(<span class="hljs-string">&quot;/graphql&quot;</span>, graphql_endpoint);
+
+    <span class="hljs-keyword">let</span> chain = Chain::new(mount);
+
+    Iron::new(chain).http(<span class="hljs-string">&quot;0.0.0.0:8080&quot;</span>).unwrap();
+}
+</code></pre>
+<h2 id="accessing-data-from-the-request">Accessing data from the request</h2>
+<p>If you want to access e.g. the source IP address of the request from a field
+resolver, you need to pass this data using Juniper&apos;s <a href="context.md">context
+feature</a>.</p>
+<pre><code class="lang-rust"><span class="hljs-keyword">use</span> std::net::SocketAddr;
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Context</span></span> {
+    remote_addr: SocketAddr,
+}
+
+<span class="hljs-keyword">impl</span> juniper::Context <span class="hljs-keyword">for</span> Context {}
+
+<span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">context_factory</span></span>(req: &amp;<span class="hljs-keyword">mut</span> Request) -&gt; Context {
+    Context {
+        remote_addr: req.remote_addr
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Root</span></span>;
+
+graphql_object!(Root: Context |&amp;<span class="hljs-keyword">self</span>| {
+    field my_addr(&amp;executor) -&gt; <span class="hljs-built_in">String</span> {
+        <span class="hljs-keyword">let</span> context = executor.context();
+
+        <span class="hljs-built_in">format!</span>(<span class="hljs-string">&quot;Hello, you&apos;re coming from {}&quot;</span>, context.remote_addr)
+    }
+});
+</code></pre>
+<h2 id="accessing-global-data">Accessing global data</h2>
+<p>FIXME: Show how the <code>persistent</code> crate works with contexts using e.g. <code>r2d2</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rocket.html" class="navigation navigation-prev " aria-label="Previous page: Rocket">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../advanced/non_struct_objects.html" class="navigation navigation-next " aria-label="Next page: Non-struct objects">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Iron","level":"4.2","depth":1,"next":{"title":"Non-struct objects","level":"5.1","depth":1,"path":"advanced/non_struct_objects.md","ref":"advanced/non_struct_objects.md","articles":[]},"previous":{"title":"Rocket","level":"4.1","depth":1,"path":"servers/rocket.md","ref":"servers/rocket.md","articles":[]},"dir":"ltr"},"config":{"plugins":["codeblock-omit","codeblock-rust","sane-sidebar","-sharing"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-omit":{},"codeblock-rust":{},"sane-sidebar":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"servers/iron.md","mtime":"2018-08-27T22:44:48.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-27T22:45:55.224Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-sane-sidebar/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
